@@ -12,7 +12,7 @@ provider "aws" {
 # website::tag::1:: Deploy an EC2 Instance.
 resource "aws_instance" "example" {
   # website::tag::2:: Run an Ubuntu 18.04 AMI on the EC2 instance.
-  ami                    = "ami-0d5d9d301c853a04a"
+  ami                    = "ami-052f10f1c45aa2155"
   instance_type          = "t2.micro"
 
 
