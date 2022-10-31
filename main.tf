@@ -26,13 +26,13 @@ EOF
 
 # website::tag::4:: Allow the instance to receive requests on port 8080.
 #resource "aws_security_group" "instance" {
-#  ingress {
-#    from_port   = 8080
-#    to_port     = 8080
-#    protocol    = "tcp"
-#    cidr_blocks = ["0.0.0.0/0"]
-#  }
-#}
+ingress {
+    from_port   = 8080
+    to_port     = 8080
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
 
 # website::tag::5:: Output the instance's public IP address.
 output "public_ip" {
